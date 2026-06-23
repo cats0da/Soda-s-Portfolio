@@ -1,0 +1,330 @@
+:root{
+    --bg:#120606; /* dark red-black base */
+    --primary:#ff2e2e; /* main red */
+    --primary2:#b30000; /* deep red */
+    --glass:rgba(255,255,255,0.06);
+    --border:rgba(255,255,255,0.12);
+
+    }
+    
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+    }
+    
+    body{
+    background:var(--bg);
+    color:white;
+    overflow-x:hidden;
+    }
+    
+    /* BACKGROUND */
+    .background{
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at top left,#38bdf840,transparent 30%),
+    radial-gradient(circle at bottom right,#2563eb40,transparent 30%);
+    z-index:-2;
+    }
+    
+    .blur1,.blur2{
+    position:fixed;
+    width:500px;
+    height:500px;
+    filter:blur(250px);
+    opacity:.15;
+    z-index:-1;
+    }
+    
+    .blur1{background:#ff2e2e;top:-100px;left:-100px;}
+    .blur2{background:#b30000;bottom:-100px;right:-100px;}
+    
+    /* NAV */
+    nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,.05);
+    border-bottom:1px solid var(--border);
+    z-index:1000;
+    }
+    
+    nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+    }
+    
+    nav a{
+    color:white;
+    text-decoration:none;
+    opacity:.7;
+    transition:.3s;
+    }
+    
+    nav a:hover{
+    color:var(--primary);
+    opacity:1;
+    }
+    
+    .logo{
+    font-size:28px;
+    font-weight:800;
+    color:var(--primary);
+    }
+    
+    /* HERO */
+    .hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+    padding-top: 120px;
+    }
+    
+    .left h1{
+    font-size:80px;
+    font-weight:800;
+    }
+    
+    .gradient{
+    background:linear-gradient(90deg,#ff2e2e,#ff8080);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    }
+    
+    
+    .tag{
+    background:var(--glass);
+    padding:10px 18px;
+    border:1px solid var(--border);
+    border-radius:30px;
+    margin-bottom:20px;
+    }
+    
+   .buttons{
+    display:flex;
+    gap:20px;
+    margin-top:45px; /* 👈 pushes buttons lower */
+    }
+    
+    button{
+    padding:16px 30px;
+    border:none;
+    cursor:pointer;
+    transition:.3s;
+    border-radius:15px;
+    }
+    
+    .buttons a{
+    padding:16px 30px;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.3s;
+    display:inline-block;
+    text-decoration:none;
+    font-weight:700;
+    }
+
+/* PRIMARY BUTTON */
+    .primary{
+    background:var(--primary);
+    font-weight:700;
+    color:white;
+    box-shadow:0 0 25px rgba(255,46,46,.4);
+    }
+
+/* SECONDARY BUTTON */
+    .secondary{
+    background:var(--glass);
+    color:white;
+    border:1px solid var(--border);
+    backdrop-filter:blur(15px);
+    }
+
+/* HOVER EFFECT */
+    .buttons a:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    }
+    
+    
+    /* PROFILE */
+    .profile{
+    width:350px;
+    height:350px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:120px;
+    border-radius:30px;
+    background:var(--glass);
+    border:1px solid var(--border);
+    animation:float 4s infinite ease-in-out;
+    }
+    
+    /* SECTIONS */
+    section{
+    padding:120px 8%;
+    }
+    
+    .title{
+    font-size:55px;
+    margin-bottom:40px;
+    }
+    .portfolio-img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:20px;
+    margin-bottom:15px;
+    transition:.4s;
+    }
+
+    .card:hover .portfolio-img{
+    transform:scale(1.05);
+    }
+    /* CARDS */
+    .card{
+    background:var(--glass);
+    border:1px solid var(--border);
+    border-radius:25px;
+    padding:30px;
+    transition:.4s;
+    overflow:hidden;
+    position:relative;
+    }
+    
+    .card:hover{
+    transform:translateY(-10px);
+    }
+    
+    .about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    }
+    
+    .stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:25px;
+    margin-top:30px;
+    }
+    
+    .stat{
+    background:var(--glass);
+    border:1px solid var(--border);
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    }
+    
+    .number{
+    font-size:50px;
+    color:var(--primary);
+    font-weight:800;
+    }
+    /* RIGHT SIDE LAYOUT */
+    .hero-right{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    align-items:center;
+    }
+
+    .profile-card{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    overflow:hidden;
+    position:relative;
+    }
+
+    .profile-card::before{
+    content:"";
+    position:absolute;
+    inset:-5px;
+    background:linear-gradient(45deg,#ff0000,#ff5050);
+    border-radius:50%;
+    z-index:-1;
+    filter:blur(20px);
+    }
+
+    .profile-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+    }
+
+/* SOCIAL BOXES */
+    .social-card{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    width:360px;
+    }
+
+    .social{
+    padding:18px;
+    border-radius:20px;
+    background:var(--glass);
+    border:1px solid var(--border);
+    backdrop-filter:blur(20px);
+    transition:.3s;
+    }
+
+    .social:hover{
+    transform:translateY(-5px);
+    }
+
+/* RED THEME ACCENTS */
+    .discord{
+    border-left:4px solid #ff2e2e;
+    }
+
+    .roblox{
+    border-left:4px solid #ff5555;
+    }
+
+    .social h3{
+    margin-bottom:5px;
+    color:white;
+    }
+
+    .social p{
+    opacity:.8;
+    }
+    
+    /* ANIMATIONS */
+    @keyframes float{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+    }
+    
+    /* MOBILE */
+    @media(max-width:1000px){
+    .hero{
+    flex-direction:column;
+    text-align:center;
+    gap:50px;
+    }
+    
+    .left h1{
+    font-size:50px;
+    }
+    
+    nav ul{
+    display:none;
+    }
+    }
