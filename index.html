@@ -1,200 +1,1037 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Soda | Roblox UI Designer</title>
+
+<meta name="description" content="Professional Roblox UI Designer Portfolio">
+<meta name="theme-color" content="#ff2020">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="SodaProfile.png">
+
 </head>
 
 <body>
 
-<!-- BACKGROUND EFFECTS -->
-<div class="background"></div>
-<div class="blur1"></div>
-<div class="blur2"></div>
+<!-- ========================= -->
+<!-- LOADING SCREEN 1 -->
+<!-- ========================= -->
 
-<!-- NAVBAR -->
+<div id="loader">
+
+    <div class="loader-background"></div>
+
+    <div class="loader-content">
+
+        <div class="loader-logo">
+
+            <img src="SodaProfile.png" alt="Soda">
+
+        </div>
+
+        <h1 class="loader-title">
+            Soda Portfolio
+        </h1>
+
+        <p class="loader-text">
+            Loading Experience...
+        </p>
+
+        <div class="loading-bar">
+
+            <div class="loading-progress"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ========================= -->
+<!-- BACKGROUND -->
+<!-- ========================= -->
+
+<div class="background">
+
+    <div class="red-orb orb1"></div>
+    <div class="red-orb orb2"></div>
+    <div class="red-orb orb3"></div>
+
+    <div class="grid"></div>
+
+</div>
+
+<!-- Cursor Glow -->
+
+<div id="cursorGlow"></div>
+
+<!-- ========================= -->
+<!-- NAVIGATION -->
+<!-- ========================= -->
+
+<header>
+
 <nav>
-  <div class="logo">Soda's Portfolio</div>
 
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+<div class="logo">
+
+<img src="SodaProfile.png" alt="Soda">
+
+<span>Soda</span>
+
+</div>
+
+<ul class="nav-links">
+
+<li>
+<a href="#home" class="active">
+Home
+</a>
+</li>
+
+<li>
+<a href="#about">
+About
+</a>
+</li>
+
+<li>
+<a href="#portfolio">
+Portfolio
+</a>
+</li>
+
+<li>
+<a href="#contact">
+Contact
+</a>
+</li>
+
+</ul>
+
+<div class="discord-button">
+
+<a href="https://discord.com/users/YOUR_ID" target="_blank">
+
+Discord
+
+</a>
+
+</div>
+
 </nav>
 
-<!-- HERO SECTION -->
-<section class="hero">
+</header>
 
-  <!-- LEFT SIDE -->
-  <div class="left">
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
 
-    <div class="tag">🎮 Roblox UI Designer • 4 Years Experience</div>
+<section id="home" class="hero">
 
-    <h1>Hi, I'm <span class="gradient">Soda</span></h1>
+<div class="hero-left">
 
-    <p>
-      I create high-quality Roblox UI systems such as menus, shop interfaces,
-      inventories, and full game UI designs. Built to give players a premium experience.
-    </p>
+<div class="hero-tag">
 
-    <div class="buttons">
-      <a href="#portfolio" class="primary">View Work</a>
-      <a href="#contact" class="secondary">Contact Me</a>
+Roblox UI Designer
+
+</div>
+
+<h1>
+
+Creating
+
+<span>
+
+Modern Roblox UI
+
+</span>
+
+Experiences
+
+</h1>
+
+<p>
+
+I specialize in creating premium Roblox interfaces,
+high-quality user experiences,
+clean animations,
+and modern UI systems that make every game feel polished and professional.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#portfolio" class="primary-btn">
+
+View Portfolio
+
+</a>
+
+<a href="#contact" class="secondary-btn">
+
+Contact Me
+
+</a>
+
+</div>
+<div class="hero-right">
+
+    <!-- ========================= -->
+    <!-- PROFILE CARD -->
+    <!-- ========================= -->
+
+    <div class="profile-wrapper">
+
+        <div class="profile-ring"></div>
+
+        <div class="profile-card">
+
+            <img
+                src="SodaProfile.png"
+                alt="Soda Profile"
+                class="profile-image"
+            >
+
+        </div>
+
     </div>
 
-  </div>
+    <!-- ========================= -->
+    <!-- ROBLOX CARD -->
+    <!-- ========================= -->
 
-  <!-- RIGHT SIDE -->
-  <div class="hero-right">
+    <div class="info-card roblox-card">
 
-    <div class="profile-card">
-      <div class="profile-card">
-  <img src="SodaProfile.PNG" alt="Soda Profile" class="profile-img">
+        <div class="info-icon">
+            🎮
+        </div>
+
+        <div class="info-content">
+
+            <h3>
+                Roblox
+            </h3>
+
+            <p>
+                @azertyllll2
+            </p>
+
+        </div>
+
     </div>
 
-    <div class="social-card">
+    <!-- ========================= -->
+    <!-- DISCORD CARD -->
+    <!-- ========================= -->
 
-      <div class="social discord">
-        <h3>Discord</h3>
-        <p>uwusoda</p>
-      </div>
+    <div class="info-card discord-card">
 
-      <div class="social roblox">
-        <h3>Roblox</h3>
-        <p>azertyllll2</p>
-      </div>
+        <div class="info-icon">
+            💬
+        </div>
+
+        <div class="info-content">
+
+            <h3>
+                Discord
+            </h3>
+
+            <p>
+                uwusoda
+            </p>
+
+        </div>
 
     </div>
 
-  </div>
+</div>
 
 </section>
 
+<!-- ========================= -->
 <!-- ABOUT -->
+<!-- ========================= -->
+
 <section id="about">
 
-  <h2 class="title">About Me</h2>
+    <div class="section-header">
 
-  <div class="about-grid">
+        <h2>
 
-    <div class="card">
-      <h3>Who Am I?</h3>
-      <p>Roblox UI Designer with 4 years of experience.</p>
+            About Me
+
+        </h2>
+
+        <p>
+
+            Passionate about building clean,
+            modern and premium Roblox user interfaces.
+
+        </p>
+
     </div>
 
-    <div class="card">
-      <h3>What I Do?</h3>
-      <p>Menus, HUDs, inventory systems, shop UI, and redesigns.</p>
+    <div class="about-grid">
+
+        <div class="about-card">
+
+            <div class="about-icon">
+
+                🎨
+
+            </div>
+
+            <h3>
+
+                UI Design
+
+            </h3>
+
+            <p>
+
+                I design modern Roblox interfaces with
+                animations, gradients, glassmorphism
+                and clean layouts.
+
+            </p>
+
+        </div>
+
+        <div class="about-card">
+
+            <div class="about-icon">
+
+                ⚡
+
+            </div>
+
+            <h3>
+
+                Performance
+
+            </h3>
+
+            <p>
+
+                My interfaces are lightweight,
+                responsive and optimized
+                for every device.
+
+            </p>
+
+        </div>
+
+        <div class="about-card">
+
+            <div class="about-icon">
+
+                🚀
+
+            </div>
+
+            <h3>
+
+                Experience
+
+            </h3>
+
+            <p>
+
+                Over 4 years creating Roblox UI,
+                improving user experience
+                and polishing game interfaces.
+
+            </p>
+
+        </div>
+
+    </div>
+        <!-- ========================= -->
+    <!-- STATS -->
+    <!-- ========================= -->
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+
+            <h1>4+</h1>
+
+            <span>Years Experience</span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h1>100+</h1>
+
+            <span>UI Designs</span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h1>15+</h1>
+
+            <span>Projects</span>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h1>∞</h1>
+
+            <span>Creativity</span>
+
+        </div>
+
     </div>
 
-  </div>
+    <!-- ========================= -->
+    <!-- SKILLS -->
+    <!-- ========================= -->
 
-  <div class="stats">
+    <div class="section-header">
 
-    <div class="stat">
-      <div class="number">4+</div>
-      <p>Years</p>
+        <h2>
+
+            My Skills
+
+        </h2>
+
+        <p>
+
+            I focus on creating premium interfaces
+            that look modern, clean and professional.
+
+        </p>
+
     </div>
 
-    <div class="stat">
-      <div class="number">10+</div>
-      <p>Projects</p>
+    <div class="skills-grid">
+
+        <div class="skill-card">
+
+            <h3>🎨 UI Design</h3>
+
+            <p>
+                Modern Roblox interfaces with
+                professional layouts,
+                gradients and clean spacing.
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h3>✨ UI Animation</h3>
+
+            <p>
+                Smooth transitions,
+                hover effects,
+                notifications,
+                loading screens
+                and polished animations.
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h3>📱 Responsive UI</h3>
+
+            <p>
+                Interfaces that scale nicely
+                across different
+                screen sizes.
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h3>⚙️ Roblox Studio</h3>
+
+            <p>
+                Building interfaces
+                directly inside Roblox Studio
+                with optimized layouts.
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h3>💻 Lua Scripting</h3>
+
+            <p>
+                Connecting UI
+                with Roblox systems
+                using clean Lua code.
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h3>🎯 User Experience</h3>
+
+            <p>
+                Designing interfaces
+                that are intuitive,
+                simple and enjoyable
+                for players.
+            </p>
+
+        </div>
+
     </div>
 
-    <div class="stat">
-      <div class="number">1+</div>
-      <p>Clients</p>
+    <!-- ========================= -->
+    <!-- GAME GENRES -->
+    <!-- ========================= -->
+
+    <div class="section-header">
+
+        <h2>
+
+            Game Genres
+
+        </h2>
+
     </div>
 
-  </div>
+    <div class="genres-grid">
+
+        <div class="genre">🏃 Obby</div>
+
+        <div class="genre">🧗 Parkour</div>
+
+        <div class="genre">⚡ Skill Based</div>
+
+        <div class="genre">🌍 Multiplayer</div>
+
+        <div class="genre">🎮 Casual</div>
+
+        <div class="genre">🏆 Competitive</div>
+
+        <div class="genre">🧩 Platformer</div>
+
+        <div class="genre">🎨 UI Focused</div>
+
+    </div>
 
 </section>
 
-<!-- SERVICES -->
-<section id="services">
-
-  <h2 class="title">Services</h2>
-
-  <div class="about-grid">
-
-    <div class="card">
-      <h3>Game UI</h3>
-      <p>Full Roblox UI systems for games.</p>
-    </div>
-
-    <div class="card">
-      <h3>UI Redesign</h3>
-      <p>Modernizing old UI into clean designs.</p>
-    </div>
-
-    <div class="card">
-      <h3>Mobile UI</h3>
-      <p>Optimized interfaces for all devices.</p>
-    </div>
-
-    <div class="card">
-      <h3>Prototyping</h3>
-      <p>UI mockups before development starts.</p>
-    </div>
-
-  </div>
-
-</section>
-
+<!-- ========================= -->
 <!-- PORTFOLIO -->
+<!-- ========================= -->
+
 <section id="portfolio">
 
-  <h2 class="title">Portfolio</h2>
+    <div class="section-header">
 
-  <div class="about-grid">
+        <h2>
 
-    <div class="card">
-      <img src="GameGenres2.png" alt="UI 1" class="portfolio-img">
-      <h3>Main Game UI</h3>
+            Featured Projects
+
+        </h2>
+
+        <p>
+
+            Some of my favorite Roblox UI projects.
+
+        </p>
+
     </div>
 
-    <div class="card">
-      <img src="oof.png" alt="UI 2" class="portfolio-img">
-      <h3>Inventory UI</h3>
+    <div class="portfolio-grid">
+          <!-- ========================= -->
+    <!-- TOWER OF SODA -->
+    <!-- ========================= -->
+
+    <div class="project-card">
+
+        <img
+            src="TowerOfSoda.png"
+            alt="Tower of Soda"
+            class="project-image"
+        >
+
+        <div class="project-content">
+
+            <span class="project-tag">
+                Main Project
+            </span>
+
+            <h3>
+                Tower of Soda
+            </h3>
+
+            <p>
+
+                A modern Roblox obby inspired by Tower games,
+                featuring premium UI, music system,
+                rounds, polished effects,
+                smooth gameplay and custom mechanics.
+
+            </p>
+
+            <div class="project-buttons">
+
+                <a href="#" class="project-btn">
+
+                    View Project
+
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="card">
-      <img src="gamegenres.png" alt="UI 3" class="portfolio-img">
-      <h3>Loading Screen</h3>
+    <!-- ========================= -->
+    <!-- LOADING SCREEN 1 -->
+    <!-- ========================= -->
+
+    <div class="project-card">
+
+        <img
+            src="LoadingScreen1.png"
+            alt="Loading Screen 1"
+            class="project-image"
+        >
+
+        <div class="project-content">
+
+            <span class="project-tag">
+
+                UI Design
+
+            </span>
+
+            <h3>
+
+                Loading Screen #1
+
+            </h3>
+
+            <p>
+
+                Premium Roblox loading interface
+                with animated progress bar,
+                smooth transitions,
+                modern typography
+                and immersive effects.
+
+            </p>
+
+            <div class="project-buttons">
+
+                <a href="#" class="project-btn">
+
+                    View Design
+
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
 
-  </div>
+    <!-- ========================= -->
+    <!-- LOADING SCREEN 2 -->
+    <!-- ========================= -->
+
+    <div class="project-card">
+
+        <img
+            src="LoadingScreen2.png"
+            alt="Loading Screen 2"
+            class="project-image"
+        >
+
+        <div class="project-content">
+
+            <span class="project-tag">
+
+                UI Design
+
+            </span>
+
+            <h3>
+
+                Loading Screen #2
+
+            </h3>
+
+            <p>
+
+                Redesigned cinematic loading screen
+                with layered animations,
+                premium layout,
+                dynamic glow
+                and clean user experience.
+
+            </p>
+
+            <div class="project-buttons">
+
+                <a href="#" class="project-btn">
+
+                    View Design
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+        <!-- ========================= -->
+    <!-- GAME GENRES -->
+    <!-- ========================= -->
+
+    <div class="project-card">
+
+        <img
+            src="gamegenres.png"
+            alt="Game Genres"
+            class="project-image"
+        >
+
+        <div class="project-content">
+
+            <span class="project-tag">
+
+                Specialization
+
+            </span>
+
+            <h3>
+
+                Game Genres
+
+            </h3>
+
+            <p>
+
+                I create interfaces for Obby,
+                Parkour, Platformer,
+                Skill-Based, Casual,
+                Multiplayer and Competitive
+                Roblox experiences.
+
+            </p>
+
+            <div class="genre-list">
+
+                <span>🏃 Obby</span>
+                <span>⚡ Skill</span>
+                <span>🌍 Multiplayer</span>
+                <span>🏆 Competitive</span>
+                <span>🎮 Casual</span>
+                <span>🧩 Platformer</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- UI COLLECTION -->
+    <!-- ========================= -->
+
+    <div class="project-card">
+
+        <img
+            src="GameGenres2.png"
+            alt="UI Collection"
+            class="project-image"
+        >
+
+        <div class="project-content">
+
+            <span class="project-tag">
+
+                Collection
+
+            </span>
+
+            <h3>
+
+                Roblox UI Collection
+
+            </h3>
+
+            <p>
+
+                A collection of premium Roblox
+                interfaces featuring glassmorphism,
+                modern gradients,
+                notifications,
+                inventory systems,
+                menus and polished animations.
+
+            </p>
+
+            <div class="project-buttons">
+
+                <a href="#contact" class="project-btn">
+
+                    Hire Me
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 </section>
 
+<!-- ========================= -->
 <!-- CONTACT -->
+<!-- ========================= -->
+
 <section id="contact">
 
-  <h2 class="title">Contact</h2>
+<div class="section-header">
 
-  <div class="card">
-    <p>Discord: uwusoda</p>
-    <p>Roblox: azertyllll2</p>
-  </div>
+<h2>
+
+Let's Work Together
+
+</h2>
+
+<p>
+
+Interested in working together?
+Feel free to contact me through
+Discord or Roblox.
+
+</p>
+
+</div>
+
+<div class="contact-container">
+
+<div class="contact-card">
+
+<h3>
+
+Discord
+
+</h3>
+
+<p>
+
+Username:
+<strong>uwusoda</strong>
+
+</p>
+
+<a
+href="https://discord.com/users/YOUR_ID"
+target="_blank"
+class="contact-button"
+>
+
+Open Discord
+
+</a>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+
+Roblox
+
+</h3>
+
+<p>
+
+Username:
+<strong>azertyllll2</strong>
+
+</p>
+
+<a
+href="https://www.roblox.com/users/profile"
+target="_blank"
+class="contact-button"
+>
+
+View Profile
+
+</a>
+
+</div>
+
+</div>
+    <!-- ========================= -->
+    <!-- CONTACT MESSAGE -->
+    <!-- ========================= -->
+
+    <div class="contact-message">
+
+        <h3>
+
+            Why Work With Me?
+
+        </h3>
+
+        <p>
+
+            My goal is to create modern, polished and professional
+            Roblox interfaces that not only look beautiful,
+            but also improve the player's experience.
+            Every project is designed with attention to detail,
+            smooth animations and clean layouts.
+
+        </p>
+
+    </div>
 
 </section>
 
+<!-- ========================= -->
 <!-- FOOTER -->
-<footer style="text-align:center; padding:50px; opacity:0.6;">
-  © 2026 Soda
+<!-- ========================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-logo">
+
+            <img
+                src="SodaProfile.png"
+                alt="Soda"
+            >
+
+            <h2>
+
+                Soda
+
+            </h2>
+
+        </div>
+
+        <p>
+
+            Roblox UI Designer • Interface Developer • Portfolio
+
+        </p>
+
+        <div class="footer-social">
+
+            <a
+                href="https://www.roblox.com/users/profile"
+                target="_blank"
+                class="footer-icon"
+            >
+
+                🎮
+
+            </a>
+
+            <a
+                href="https://discord.com/users/YOUR_ID"
+                target="_blank"
+                class="footer-icon"
+            >
+
+                💬
+
+            </a>
+
+            <a
+                href="https://github.com/cats0da"
+                target="_blank"
+                class="footer-icon"
+            >
+
+                💻
+
+            </a>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="#home">
+
+                Home
+
+            </a>
+
+            <a href="#about">
+
+                About
+
+            </a>
+
+            <a href="#portfolio">
+
+                Portfolio
+
+            </a>
+
+            <a href="#contact">
+
+                Contact
+
+            </a>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 Soda Portfolio.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
 </footer>
+
+<!-- ========================= -->
+<!-- BACK TO TOP -->
+<!-- ========================= -->
+
+<button id="backToTop">
+
+    ↑
+
+</button>
+
+<!-- ========================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================= -->
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
