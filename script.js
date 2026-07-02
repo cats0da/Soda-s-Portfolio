@@ -4,42 +4,7 @@
             PART 13 / 20
 ==========================================*/
 
-window.addEventListener("load", () => {
 
-    const loader = document.getElementById("loader");
-    const progress = document.querySelector(".loading-progress");
-
-    let width = 0;
-
-    const loading = setInterval(() => {
-
-        width += Math.random() * 8 + 3;
-
-        if (width >= 100) {
-
-            width = 100;
-
-            clearInterval(loading);
-
-            setTimeout(() => {
-
-                loader.classList.add("loader-hidden");
-
-                setTimeout(() => {
-
-                    loader.style.display = "none";
-
-                }, 1000);
-
-            }, 350);
-
-        }
-
-        progress.style.width = width + "%";
-
-    }, 80);
-
-});
 
 /*==========================================
             SCROLL REVEAL
