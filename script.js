@@ -1075,23 +1075,7 @@ document.querySelectorAll(
 
 });
 
-/*==========================================
-        IMAGE PRELOADER
-==========================================*/
 
-window.addEventListener("load",()=>{
-
-    document.querySelectorAll("img")
-
-    .forEach(image=>{
-
-        const preload = new Image();
-
-        preload.src = image.src;
-
-    });
-
-});
 
 /*==========================================
         FPS OPTIMIZATION
